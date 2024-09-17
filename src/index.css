@@ -1,13 +1,492 @@
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+  
+
+.logo {
+    width: 70px; /* يمكنك تعديل الحجم كما تراه مناسباً */
+    height: auto; /* للحفاظ على نسبة العرض إلى الارتفاع */
+  }
+  
+
+  /* .navbar{
+    background-color:transparent;
+   position: fixed;
+   width: 100%;
+    z-index: 999999999999999999;
+  } */
+
+ .navs{
+  background-color: #FFF;
+  border-radius: 15px;
+ }
+
+
+
+  /* تأثير الانسدال */
+.nav-item:hover .dropdown-menu {
+    display: block;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+  }
+  
+  .nav-item:hover .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* إضافة خط تحت العنصر عند التمرير */
+
+  .dropdown-menu{
+    position: relative;
+    background-color: #061d4f;
+  }
+
+  .dropdown-item {
+    position: relative;
+    color: white;
+    padding: 0.5rem 1.5rem;
+
+  }
+  
+  .dropdown-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+  }
+  
+  .dropdown-item:hover::after {
+    width: 100%;
+  }
+  
+  .line {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+  
+ 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.line::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #061d4f;
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s ease;
 }
+
+.line:hover::after {
+  width: 100%;
+}
+
+
+
+
+
+/* home */
+
+#Home {
+  background-image: #061d4f;
+  height: 100vh;
+}
+
+/* From Uiverse.io by csemszepp */ 
+.home {
+  width: 100%;
+  height: 100%;
+  --s: 200px; /* control the size */
+  --c1: #061d4f;
+  --c2: #0f40aa;
+  --c3: #143e98;
+
+  background: repeating-conic-gradient(
+        from 30deg,
+        #0000 0 120deg,
+        var(--c3) 0 180deg
+      )
+      calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+    repeating-conic-gradient(
+      from 30deg,
+      var(--c1) 0 60deg,
+      var(--c2) 0 120deg,
+      var(--c3) 0 180deg
+    );
+  background-size: var(--s) calc(var(--s) * 0.577);
+}
+
+
+.Hero-Section{
+  font-size: 70px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sc-section{
+  color: #ffffffcf;
+  font-weight: 600;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+.main-section{
+  color: #cdd1cdc1;
+  font-weight: bolder;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13rem;
+  overflow: hidden;
+  height: 3rem;
+  background-size: 300% 300%;
+  backdrop-filter: blur(1rem);
+  border-radius: 5rem;
+  transition: 0.5s;
+  animation: gradient_301 5s ease infinite;
+  border: double 4px transparent;
+  background-image: linear-gradient(#161a25, #161a25),
+    linear-gradient(
+      137.48deg,
+      #061d4f 10%,
+      #061d4f 45%,
+      #000000 67%,
+      #161a25 87%
+    );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  font-family: "Orbitron", sans-serif;
+}
+
+#container-stars {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+  backdrop-filter: blur(1rem);
+  border-radius: 5rem;
+}
+
+strong {
+  z-index: 2;
+  font-family: "Orbitron", sans-serif;
+  font-size: 12px;
+  letter-spacing: 5px;
+  color: #ffffff;
+  text-shadow: 0 0 4px white;
+}
+
+#glow {
+  position: absolute;
+  display: flex;
+  width: 12rem;
+}
+
+.circle-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  animation: orbit 5s linear infinite;
+}
+
+.circle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  filter: blur(2rem);
+}
+
+.circle:nth-of-type(1) {
+  background: rgba(245, 67, 79, 0.636);
+  animation: orbit 8s linear infinite;
+}
+
+.circle:nth-of-type(2) {
+  background: rgba(99, 30, 41, 0.704);
+  animation: orbit 10s linear infinite;
+}
+
+.btn:hover #container-stars {
+  z-index: 1;
+  background-color: #161a25;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btn:active {
+  border: double 4px #631e29;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  animation: none;
+}
+
+.btn:active .circle {
+  background: #631e29;
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(100px) rotate(-360deg);
+  }
+}
+
+#stars {
+  position: relative;
+  background: transparent;
+  width: 200rem;
+  height: 200rem;
+}
+
+#stars::after {
+  content: "";
+  position: absolute;
+  top: -10rem;
+  left: -100rem;
+  width: 100%;
+  height: 100%;
+  animation: animStarRotate 90s linear infinite;
+}
+
+#stars::after {
+  background-image: radial-gradient(#ffffff 1px, transparent 1%);
+  background-size: 50px 50px;
+}
+
+#stars::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 170%;
+  height: 500%;
+  animation: animStar 60s linear infinite;
+}
+
+#stars::before {
+  background-image: radial-gradient(#ffffff 1px, transparent 1%);
+  background-size: 50px 50px;
+  opacity: 0.5;
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-135rem);
+  }
+}
+
+@keyframes animStarRotate {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0);
+  }
+}
+
+@keyframes gradient_301 {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes pulse_3011 {
+  0% {
+    transform: scale(0.75);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.75);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+
+
+/* about */
+
+#about{
+  background-color: #00000047;
+  height: 100vh;
+}
+
+/* services */
+#services{
+  background-color: #FFF;
+  height: 100vh;
+} 
+
+
+
+
+.title h2 {
+  font-size: 65px !important;
+  color: transparent;
+  -webkit-text-stroke: 1px #000000;
+  font-family: sans-serif;
+}
+.title h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #061d4f !important;
+  
+  
+}
+
+
+.services-dec{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+
+/* From Uiverse.io by vamsidevendrakumar */ 
+.card {
+  width: 250px;
+  height: 350px;
+  perspective: 1000px;
+border:none;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.999s;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.ui-card-front,
+.mobile-card-front,
+.back-card-front,
+.front-card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.ui-card-front,
+.mobile-card-front,
+.back-card-front,
+.front-card-front {
+  background-color: transparent;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(0deg);
+}
+
+.front-card-front{
+  background-image: url('assites/6aaf54d688c2f1feb11076bee125f748\ 1.png');
+  background-attachment: fixed;
+  background-size: cover;
+  border-radius: 15px;
+  border: #000000 soled 1px;
+  background-position: 50%;
+}
+
+.back-card-front{
+  background-image: url("../src/assites/a9e39a5145ddcf087b766f567501c1de\ 1.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50%;
+  border-radius: 15px;
+  border: #000000 soled 1px;
+
+}
+
+.mobile-card-front{
+  position: absolute;
+  bottom:  50px;
+  background-image: url("../src/assites/d2b4197ad5ba872aa709aaf5af7fcc87\ 1.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50%;
+  border-radius: 15px;
+  border: #000000 soled 1px;
+}
+
+.ui-card-front{
+  background-image: url("../src/assites/827f8c8170a5842d2560da75249117af\ 1.png");
+  background-attachment: fixed;
+background-position: 50%;
+  background-size: cover;
+  border-radius: 15px;
+  border: #000000 soled 1px;
+}
+
+.card h2{
+  font-size: 40px;
+  color: #061d4f;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+}
+.card-back {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  background-color: #061d4f;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(180deg);
+}
+
+.text-front{
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 24px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+

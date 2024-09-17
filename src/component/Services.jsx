@@ -14,8 +14,8 @@ export default function Services() {
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 1 }} className="title py-5 position-relative d-flex justify-content-center align-items-center wow fadeInDown">
                     <motion.h2 
-                    initial={{ x: 100, opacity: 0 }}
-                    whileInView={{ x: 0, opacity: 1 }}
+                    initial={{ y: 100, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 1 }}
                     className="position-absolute text-uppercase fw-bold">Services</motion.h2>
                     <motion.h3
@@ -32,8 +32,8 @@ export default function Services() {
                 transition={{ duration: 1 }}
                 className="col-md-12 py-3">
                   <motion.p 
-                  initial={{ x: 150, opacity: 0 }}
-                  whileInView={{ x: 0, opacity: 1 }}
+                  initial={{ y: 150, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
                   transition={{ duration: 1 }}
                   className='text-center services-dec py-1'>
                     What AKM Code Company offers: public relations services, and the manufacture of various websites, mobile applications, and dashboards through a distinguished team to achieve the best quality for your project.
@@ -42,8 +42,8 @@ export default function Services() {
 
         
                   <motion.div 
-                  initial={{ x: 100, opacity: 0 }}
-                  whileInView={{ x: 0, opacity: 1 }}
+                  initial={{ y: 100, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
                   transition={{ duration: 1 }}
                   className="col-md-3 py-5 d-flex align-items-center justify-content-center">
                     <div className="card">
@@ -68,8 +68,8 @@ export default function Services() {
                   </motion.div>
 
                   <motion.div
-                   initial={{ x: 150, opacity: 0 }}
-                   whileInView={{ x: 0, opacity: 1 }}
+                   initial={{ y: 150, opacity: 0 }}
+                   whileInView={{ y: 0, opacity: 1 }}
                    transition={{ duration: 1 }}
                   className="col-md-3 py-5 d-flex align-items-center justify-content-center">
                     <div className="card">
@@ -93,8 +93,8 @@ export default function Services() {
                   </motion.div>
 
                   <motion.div
-                   initial={{ x: 100, opacity: 0 }}
-                   whileInView={{ x: 0, opacity: 1 }}
+                   initial={{ y: 100, opacity: 0 }}
+                   whileInView={{ y: 0, opacity: 1 }}
                    transition={{ duration: 1 }}
                   className="col-md-3 py-5 d-flex align-items-center justify-content-center">
   <div className="card">
@@ -117,8 +117,8 @@ export default function Services() {
 
 
                   <motion.div
-                   initial={{ x: 100, opacity: 0 }}
-                   whileInView={{ x: 0, opacity: 1 }}
+                   initial={{ y: 100, opacity: 0 }}
+                   whileInView={{ y: 0, opacity: 1 }}
                    transition={{ duration: 1 }}
                   className="col-md-3 py-5 d-flex align-items-center justify-content-center">
                     <div className="card">

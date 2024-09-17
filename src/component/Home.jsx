@@ -4,9 +4,6 @@ export default function Home() {
   return (
     <>
       <motion.div
-        initial={{ opacity: 0, x: -100, y: -50 }}
-        animate={{ opacity: 1, x: 0, y: 0 }}
-        transition={{ duration: 1 }}
         id="Home"
         className="container-fluid home d-flex align-items-center justify-content-center"
         style={{ height: "100vh", paddingTop: "100px" }} // Adjust padding as needed

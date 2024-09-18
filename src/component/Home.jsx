@@ -27,7 +27,7 @@ export default function Home() {
                       initial={{ y: -50, opacity: 0 }}
                       whileInView={{ y: 0, opacity: 1 }}
                       transition={{ duration: 2 }}
-                      className="sc-section text-center py-2 main-section"
+                      className="sc-section text-center  main-section"
                     >
                       SOFTWARE HOME
                     </motion.h2>
@@ -35,7 +35,7 @@ export default function Home() {
                       initial={{ x: 200, opacity: 0 }}
                       whileInView={{ x: 0, opacity: 1 }}
                       transition={{ duration: 2 }}
-                      className="text-white text-center fw-bold font-sans t Hero-Section"
+                      className="text-white text-center fw-bold font-sans py-2 t Hero-Section"
                     >
                       We build innovative software solutions <br /> for your business
                     </motion.h1>
@@ -43,7 +43,7 @@ export default function Home() {
                       initial={{ x: -200, opacity: 0 }}
                       whileInView={{ x: 0, opacity: 2 }}
                       transition={{ duration: 2 }}
-                      className="sc-section py-5 text-center"
+                      className="sc-section  text-center"
                     >
                       At AKM Code, we help businesses turn their ideas into professional apps and websites using the latest technologies.
                     </motion.h3>

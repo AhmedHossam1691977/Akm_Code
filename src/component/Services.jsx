@@ -40,22 +40,21 @@ export default function Services() {
                   </motion.p>
                 </motion.div>
 
-        
+                <div className="row"> {/* Added row for better layout control */}
                   <motion.div 
-                  initial={{ y: 100, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
+                  initial={{ x: -150, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
                   transition={{ duration: 1 }}
-                  className="col-md-3 py-5 d-flex align-items-center justify-content-center">
+                  className="col-12 col-md-3 col-sm-6 py-5 d-flex align-items-center justify-content-center"> {/* Adjusted for mobile */}
                     <div className="card">
                     <motion.h2 
                     initial={{ y: 150, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 2 }}
-                    transition={{ duration: 1 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 2 }}
                     className='text-center'> Front-End </motion.h2>
                       <div className="card-inner">
                         <div className="front-card-front">
                           <h2 className='text-center text-black'>
-                          
                           </h2>
                         </div>
                         <div className="card-back">
@@ -68,20 +67,18 @@ export default function Services() {
                   </motion.div>
 
                   <motion.div
-                   initial={{ y: 150, opacity: 0 }}
-                   whileInView={{ y: 0, opacity: 1 }}
+                   initial={{ x: -150, opacity: 0 }}
+                   whileInView={{ x: 0, opacity: 1 }}
                    transition={{ duration: 1 }}
-                  className="col-md-3 py-5 d-flex align-items-center justify-content-center">
+                  className="col-12 col-md-3 col-sm-6 py-5 d-flex align-items-center justify-content-center"> {/* Adjusted for mobile */}
                     <div className="card">
                     <motion.h2 
                      initial={{ y: 150, opacity: 0 }}
-                     whileInView={{ y: 0, opacity: 2 }}
-                     transition={{ duration: 1 }}
+                     whileInView={{ y: 0, opacity: 1 }}
+                     transition={{ duration: 2 }}
                     className='text-center'>Back-End</motion.h2>
                       <div className="card-inner">
-                      
                         <div className="back-card-front">
-                        
                         </div>
                         <div className="card-back">
                           <p className='text-front text-center'>
@@ -93,39 +90,38 @@ export default function Services() {
                   </motion.div>
 
                   <motion.div
-                   initial={{ y: 100, opacity: 0 }}
-                   whileInView={{ y: 0, opacity: 1 }}
+                   initial={{ x: -100, opacity: 0 }}
+                   whileInView={{ x: 0, opacity: 1 }}
                    transition={{ duration: 1 }}
-                  className="col-md-3 py-5 d-flex align-items-center justify-content-center">
-  <div className="card">
-  <motion.h2
-   initial={{ y: 150, opacity: 0 }}
-   whileInView={{ y: 0, opacity: 2 }}
-   transition={{ duration: 1 }}
-  className='text-center'>Mobile App</motion.h2>
-    <div className="card-inner d-flex flex-column align-items-center">
-      <div className="mobile-card-front">
-      </div>
-      <div className="card-back">
-        <p className='text-front text-center'>
-          We specialize in creating robust and user-friendly mobile applications. 
-        </p>
-      </div>
-    </div>
-  </div>
-</motion.div>
-
-
-                  <motion.div
-                   initial={{ y: 100, opacity: 0 }}
-                   whileInView={{ y: 0, opacity: 1 }}
-                   transition={{ duration: 1 }}
-                  className="col-md-3 py-5 d-flex align-items-center justify-content-center">
+                  className="col-12 col-md-3 col-sm-6 py-5 d-flex align-items-center justify-content-center"> {/* Adjusted for mobile */}
                     <div className="card">
                     <motion.h2
                      initial={{ y: 150, opacity: 0 }}
-                     whileInView={{ y: 0, opacity: 2 }}
-                     transition={{ duration: 1 }}
+                     whileInView={{ y: 0, opacity: 1 }}
+                     transition={{ duration: 2}}
+                    className='text-center'>Mobile App</motion.h2>
+                      <div className="card-inner d-flex flex-column align-items-center">
+                        <div className="mobile-card-front">
+                        </div>
+                        <div className="card-back">
+                          <p className='text-front text-center'>
+                            We specialize in creating robust and user-friendly mobile applications. 
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </motion.div>
+
+                  <motion.div
+                   initial={{ x: -150, opacity: 0 }}
+                   whileInView={{ x: 0, opacity: 1 }}
+                   transition={{ duration: 1 }}
+                  className="col-12 col-md-3 col-sm-6 py-5 d-flex align-items-center justify-content-center"> {/* Adjusted for mobile */}
+                    <div className="card">
+                    <motion.h2
+                     initial={{ y: 150, opacity: 0 }}
+                     whileInView={{ y: 0, opacity: 1 }}
+                     transition={{ duration: 2}}
                     className='text-center '>UI/UX</motion.h2>
                       <div className="card-inner">
                         <div  className="ui-card-front">
@@ -138,8 +134,7 @@ export default function Services() {
                       </div>
                     </div>
                   </motion.div>
-              
-                
+                </div>
               </div>
             </div>
           </div>

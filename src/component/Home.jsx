@@ -176,7 +176,7 @@ export default function Home() {
                   </motion.div>
 
                   <motion.div
-                   initial={{ x: -100, opacity: 0 }}
+                   initial={{ x: -150, opacity: 0 }}
                    whileInView={{ x: 0, opacity: 1 }}
                    transition={{ duration: 1 }}
                   className="col-12 col-md-3 col-sm-6 py-5 d-flex align-items-center justify-content-center"> {/* Adjusted for mobile */}
@@ -185,13 +185,13 @@ export default function Home() {
                      initial={{ y: 150, opacity: 0 }}
                      whileInView={{ y: 0, opacity: 1 }}
                      transition={{ duration: 2}}
-                    className='text-center'>Mobile App</motion.h2>
-                      <div className="card-inner d-flex flex-column align-items-center">
-                        <div className="mobile-card-front">
+                    className='text-center '>Mobile App</motion.h2>
+                      <div className="card-inner">
+                        <div  className="mobile-card-front">
                         </div>
                         <div className="card-back">
                           <p className='text-front text-center'>
-                            We specialize in creating robust and user-friendly mobile applications. 
+                          We specialize in creating robust and user-friendly mobile applications. 
                           </p>
                         </div>
                       </div>
